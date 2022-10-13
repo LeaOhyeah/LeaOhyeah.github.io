@@ -1,0 +1,131 @@
+/* dekstop navbar */
+@media screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-toggle::after {
+    border-top: 0;
+    border-bottom: 0.3em solid;
+  }
+}
+
+/* tablet and mobie navbar*/
+@media screen and (max-width: 991px) {
+  .dropdown-toggle.show::after {
+    border-top: 0;
+    border-bottom: 0.3em solid;
+  }
+}
+
+/* mobile and tablet carousel slider */
+.carousel-inner-cs {
+  padding: 1em;
+}
+.card-cs {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev-cs,
+.carousel-control-next-cs {
+  background-color: #ff0000 !important;
+  width: 6vh;
+  height: 6vh;
+  /* border-radius: 50%; */
+  /* top: 50%; */
+  /* transform: translateY(-50%) !important; */
+}
+@media (min-width: 768px) {
+  .carousel-item-cs {
+    margin-right: 0 !important;
+    /* flex: 0 0 33.333333% !important; */
+    flex: 0 0 20% !important;
+    display: block !important;
+  }
+  .carousel-inner-cs {
+    display: flex !important;
+  }
+}
+.card-cs .img-wrapper-cs {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navbar {
+  /* background-image: linear-gradient(160deg, #e90004 40%, #0037ff 100%) !important; */
+  background: linear-gradient(to top, white, red);
+}
+
+.sidebar-content {
+  margin-top: 2rem;
+}
+
+.sidebar-content > ul {
+  list-style: none;
+}
+
+.sidebar-content > ul > li {
+  padding: 0.5rem;
+}
+
+.sidebar-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: semi-blod;
+}
+
+.sidebar-content .active {
+  background-color: red !important;
+}
+
+.sidebar-content li:hover {
+  background-color: pink;
+  font-weight: bold !important;
+  padding: 2px;
+}
+.sidebar-content li a:hover {
+  color: white;
+}
+
+.sidebar-content .active a {
+  color: white;
+  font-weight: bold;
+}
+
+.carousel-item img {
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 50%, #ff0000 100%);
+}
