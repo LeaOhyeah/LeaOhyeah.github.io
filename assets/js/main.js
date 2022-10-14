@@ -29,3 +29,11 @@ var sliderCard = document.querySelector(
    } else {
      $(sliderCard).addClass("slide");
    }
+
+
+$(".btn-detail").on("click", function(e) {
+  let deskripsi =$(this).prev();
+  let judul =deskripsi.prev();
+  $(".modal-content h1").text(judul.html());
+  $(".modal-content p").text(deskripsi.html());
+})
